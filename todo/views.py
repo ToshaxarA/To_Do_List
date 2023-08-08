@@ -29,4 +29,4 @@ class TaskAPIView(mixins.RetrieveModelMixin, mixins.ListModelMixin,
             return super().destroy(self, request, args, kwargs)
         else:
             self.get_queryset().delete()
-            return Response({"Все задачи удалены"}, status=status.HTTP_204_NO_CONTENT)
+            return Response({"Все дела удалены"}, status=status.HTTP_204_NO_CONTENT)
